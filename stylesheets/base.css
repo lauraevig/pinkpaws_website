@@ -24,14 +24,14 @@
 
 /* #Reset & Basics (Inspired by E. Meyers)
 ================================================== */
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
 		border: 0;
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline; }
-	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	article, aside, details, figcaption, figure, header, hgroup, menu, nav, section {
 		display: block; }
 	body {
 		line-height: 1; }
@@ -124,6 +124,11 @@
 
 /* #Buttons
 ================================================== */
+	.btn {
+		background: #cf0097;
+		color: #ffffff;
+		border-radius: 20px;
+	}
 
 	.button,
 	button,
@@ -131,7 +136,8 @@
 	input[type="reset"],
 	input[type="button"] {
 	  float: right;
-	  background: #cf0097; 
+	  background: #cf0097;
+	  border: none; 
 	  border-radius: 20px;
 	  color: #fff;
 	  display: inline-block;
@@ -139,7 +145,6 @@
 	  text-decoration: none;
 	  cursor: pointer;
 	  margin-bottom: 20px;
-	  margin-right: 70px;
 	  line-height: normal;
 	  padding: 8px 10px;
 	  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
@@ -191,7 +196,7 @@
 		font: 13px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		color: #777;
 		margin: 0;
-		width: 210px;
+		width: 100%;
 		max-width: 100%;
 		display: block;
 		margin-bottom: 20px;
@@ -229,3 +234,28 @@
 	.remove-bottom { margin-bottom: 0 !important; }
 	.half-bottom { margin-bottom: 10px !important; }
 	.add-bottom { margin-bottom: 20px !important; }
+
+
+.banner { position: relative; overflow: auto; }
+    .banner li { list-style: none; }
+        .banner ul li { float: left; }
+
+.members li {
+	line-height: 8px;
+	padding-top: none;
+	}
+
+.member-list {
+	padding-top: 10px;
+	}
+
+footer {
+	font-size: 12px;
+	font-weight: bold;
+	color: #333;
+	float: right;
+	margin: 0;
+	padding-bottom: 10px;
+	border: 0;
+	vertical-align: baseline; }
+ 	}
